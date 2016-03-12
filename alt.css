@@ -1,9 +1,35 @@
+body {
+  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #ffffff;
+}
+/* h1 {
+  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+  line-height: 1.42857143;
+   -webkit-text-fill-color: blue;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: black;
+} */
+h1.text-inverse {
+  font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: black;
+}
+p.text-inverse {
+  color: white;
+}
+
+.col-md-6 {
+  padding-top: 70px;
+}
 .cover {
   padding: 30px 15px;
   margin-bottom: 30px;
   color: inherit;
   background-color: #eeeeee;
-  margin-bottom: 0px !important;
   padding: 0px 0px;
   background-color: transparent;
   display: -webkit-box;
@@ -14,7 +40,7 @@
   align-items: center;
   overflow: hidden;
   position: relative;
-  min-height: 100%;
+  min-height: 500px;
 }
 .cover h1,
 .cover .h1 {
@@ -25,20 +51,20 @@
   font-size: 21px;
   font-weight: 200;
 }
-.cover > hr {
+/* .cover > hr {
   border-top-color: #d5d5d5;
-}
-.container .cover,
+} */
+/* .container .cover,
 .container-fluid .cover {
   border-radius: 5px;
-}
-.cover .container {
+} */
+/* .cover .container {
   max-width: 100%;
-}
-@media screen and (min-width: 768px) {
+} */
+/* @media screen and (min-width: 768px) {
   .cover {
     padding: 48px 0;
-  }
+  } */
   .container .cover,
   .container-fluid .cover {
     padding-left: 60px;
@@ -49,7 +75,7 @@
     font-size: 63px;
   }
 }
-.cover h1.text-primary {
+/* .cover h1.text-primary {
   color: #ff851b !important;
 }
 .cover h1.text-inverse {
@@ -66,8 +92,8 @@
 }
 .cover h1.text-danger {
   color: #d9534f !important;
-}
-@media screen and (min-width: 768px) {
+} */
+/* @media screen and (min-width: 768px) {
   .cover {
     padding: 0px;
   }
@@ -75,35 +101,34 @@
   .container-fluid .cover {
     padding-left: 0px;
     padding-right: 0px;
-  }
-}
-.cover .navbar {
+  } */
+/* .cover .navbar {
   position: absolute;
   top: 0px;
   width: 100%;
   border: none;
   background-color: transparent !important;
-}
-.cover .navbar .navbar-nav li.active a {
+} */
+/* .cover .navbar .navbar-nav li.active a {
   background-color: transparent !important;
-}
-.cover .navbar .navbar-toggle {
+} */
+/* .cover .navbar .navbar-toggle {
   border-color: transparent;
-}
-.cover .navbar .navbar-toggle:hover,
+} */
+/* .cover .navbar .navbar-toggle:hover,
 .cover .navbar .navbar-toggle:focus {
   background-color: transparent;
-}
-.cover .navbar .navbar-toggle .icon-bar {
+} */
+/* .cover .navbar .navbar-toggle .icon-bar {
   background-color: #333333;
-}
-.cover .navbar.navbar-inverse .navbar-toggle {
+} */
+/* .cover .navbar.navbar-inverse .navbar-toggle {
   border-color: transparent;
-}
-.cover .navbar.navbar-inverse .navbar-toggle:hover,
+} */
+/* .cover .navbar.navbar-inverse .navbar-toggle:hover,
 .cover .navbar.navbar-inverse .navbar-toggle:focus {
   background-color: transparent;
-}
+} */
 .cover .navbar.navbar-inverse .navbar-toggle .icon-bar {
   background-color: #ffffff;
 }
@@ -119,4 +144,33 @@
 .cover .cover-image.background-image-fixed,
 .cover .cover-image.cover-image-fixed {
   background-attachment: fixed;
+} 
+#features ul {
+  list-style-type: none;
+  line-height: 300%;
+}
+#contact {
+background: -moz-linear-gradient(272deg, rgba(92,83,255,1) 0%, rgba(0,0,0,1) 16%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(92,83,255,1)), color-stop(16%, rgba(0,0,0,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(272deg, rgba(92,83,255,1) 0%, rgba(0,0,0,1) 16%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(272deg, rgba(92,83,255,1) 0%, rgba(0,0,0,1) 16%); /* opera 11.10+ */
+background: -ms-linear-gradient(272deg, rgba(92,83,255,1) 0%, rgba(0,0,0,1) 16%); /* ie10+ */
+background: linear-gradient(178deg, rgba(92,83,255,1) 0%, rgba(0,0,0,1) 16%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5C53FF', endColorstr='#000000',GradientType=0 ); /* ie6-9 */
+}
+#contact {
+ color: white;
+  padding-bottom: 75px;
+}
+#contact a {
+  color: white;
+}
+#footer {
+  background: black;
+}
+#footer p {
+  color: white;
+  font-size: 12px;
+  font-family: Arial;
+  text-decoration: underline;  
 }
